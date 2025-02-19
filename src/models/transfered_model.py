@@ -5,6 +5,7 @@ from tensorflow.keras.optimizers import RMSprop, Adam
 
 class TransferedModel(Model):
     def _define_model(self, input_shape, categories_count):
+        #change the model used, this one is for test 8
         base_model = models.load_model('results/basic_model_22_epochs_timestamp_1723141018.keras')
 
         # Remove the final softmax layer
